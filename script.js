@@ -43,11 +43,68 @@ let questions = [
         choice4: "John Waters",
         answer: 3,
     },
+    {
+        question: "In Empire Strikes Back, what was Vader's response to Luke's accusation of killing his father",
+        choice1: "Luke, I am your father",
+        choice2: "I am your father, Luke",
+        choice3: "No, I am your father",
+        choice4: "Your father is still alive",
+        answer: 3,
+    },
+    {
+        question: "Who played The Monster in the 1943 horror film, Frankenstein Meets The Wolf Man?",
+        choice1: "Lon Chaney Jr",
+        choice2: "Boris Karloff",
+        choice3: "Glenn Strange",
+        choice4: "Bela Lugosi",
+        answer: 4,
+    },
+    {
+        question: 'Where was the Tim Burton-directed 1989 comic book adaptation Batman filmed?',
+        choice1: 'Pinewood Studios, England',
+        choice2: 'Warner Brothers Studios, Hollwood USA',
+        choice3: 'Warner Brothers Studios, Burbank USA',
+        choice4: 'Skellington Productions, Burbank USA',
+        answer: 1,
+    },
+    {
+        question: 'For which role did Leonardo DiCaprio win his first best actor Oscar?',
+        choice1: 'Jordan Belfort in The Wolf of Wall Street',
+        choice2: 'Hugh Glass in The Revenant',
+        choice3: 'Calvin J. Candie in Django Unchained',
+        choice4: 'Edward Daniels in Shutter Island',
+        answer: 2,
+    },
+    {
+        question: 'Which professional wrestler starred in the lead role in 1988 sci-fi/action movie, They Live?',
+        choice1: 'The Ultimate Warrior',
+        choice2: 'Andre The Giant',
+        choice3: 'Hulk Hogan',
+        choice4: 'Roddy Piper',
+        answer: 4,
+    },
+
+    {
+        question: 'Who composed the Lord of The Rings movie trilogy?',
+        choice1: 'Howard Shore',
+        choice2: 'James Horner',
+        choice3: 'John Williams',
+        choice4: 'Danny Elfman',
+        answer: 1,
+    },
+    {
+        question: 'For which movie did Christopher Nolan make his feature-length directorial debut?',
+        choice1: 'Doodlebug',
+        choice2: 'Insomnia',
+        choice3: 'Following',
+        choice4: 'Memento',
+        answer: 3,
+    },
 ];
 
 //CONSTANTS
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 4;
+const MAX_QUESTIONS = 10;
 
 startGame = () => {
     questionCounter = 0;
@@ -59,7 +116,7 @@ startGame = () => {
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         //go to the end page
-        return window.location.assign('/end.html');
+        return window.location.assign('/gameover.html');
     }
     questionCounter++;
     questionCounterText.innerText = `${questionCounter}/${MAX_QUESTIONS}`;
