@@ -28,11 +28,11 @@
   }
 
   .correct {
-    background-color: #28a745;
+    background-color: rgba(40, 167, 69,.8);
   }
   
   .incorrect {
-    background-color: #dc3545;
+    background-color: rgba(220, 53, 69,.8);
   }
 
   /*hud*/
