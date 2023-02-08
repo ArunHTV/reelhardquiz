@@ -44,7 +44,7 @@ let questions = [
         answer: 3,
     },
     {
-        question: "In Empire Strikes Back, what was Vader's response to Luke's accusation of killing his father",
+        question: "In Empire Strikes Back, what was Vader's retort to Luke's accusation of killing his father",
         choice1: "Luke, I am your father",
         choice2: "I am your father, Luke",
         choice3: "No, I am your father",
@@ -99,6 +99,22 @@ let questions = [
         choice3: 'Following',
         choice4: 'Memento',
         answer: 3,
+    },
+    {
+        question: 'Who wrote & directed the original Plan 9 From Outer Space?',
+        choice1: 'Tim Burton',
+        choice2: 'Ed Wood',
+        choice3: 'Ridley Scott',
+        choice4: 'Robert Wise',
+        answer: 2,
+    },
+    {
+        question: 'Which now-famous Martial Artist had an uncredited role in Enter The Dragon?',
+        choice1: 'Jackie Chan',
+        choice2: 'Sammo Hung',
+        choice3: 'Chuck Norris',
+        choice4: 'Chow Yun-fat',
+        answer: 1,
     },
 ];
 

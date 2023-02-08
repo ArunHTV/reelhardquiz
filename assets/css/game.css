@@ -9,14 +9,14 @@
   
   .choice-container:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 219, 56, 0.877);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(50, 106, 211, 0.877);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
   }
   
   .choice-prefix {
     padding: 1.5rem 2.5rem;
-    background-color: #ffd700;
+    background-color: #0b1057;
     color: white;
     margin-right: 15px;
   }

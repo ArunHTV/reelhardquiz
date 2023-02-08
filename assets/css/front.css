@@ -1,5 +1,5 @@
 :root {
-    background-color: seashell;
+    background-color: rgb(110, 110, 110);
     font-size: 62.5%;
   }
   
@@ -7,7 +7,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #ebebeb;
     font-family: 'Cinzel', Verdana;
   }
   
@@ -20,7 +20,7 @@
   
   h1 {
     font-size: 5.4rem;
-    color: #555;
+    color: #ebebeb;
     margin-bottom: 5rem;
   }
   
@@ -39,6 +39,15 @@
     font-size: 2.8rem;
     font-weight: 500;
   }
+
+  p {
+    color:  rgb(27, 27, 27)
+  }
+
+  img {
+    padding-bottom: 50px;
+  }
+  
   
   /* UTILITIES */
   
@@ -85,16 +94,16 @@
     padding: 1rem 0;
     width: 20rem;
     text-align: center;
-    border: 0.1rem solid #ffd700;
+    border: 0.1rem solid #111111;
     margin-bottom: 1rem;
     text-decoration: none;
-    color: #ffd700;
-    background-color: white;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
   }
   
   .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(255, 219, 56, 0.877);
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(27, 28, 97, 0.877);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
   }
@@ -103,4 +112,13 @@
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
+  }
+
+  @media (max-width:500px) {
+   
+    h1,h2{
+    font-size: 4rem;
+    text-align: center;
+   }
+    
   }
