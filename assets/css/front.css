@@ -10,7 +10,7 @@
     color: #ebebeb;
     font-family: 'Cinzel', Verdana;
   }
-  
+  /*text styling*/
   h1,
   h2,
   h3,
@@ -19,7 +19,7 @@
   }
   
   h1 {
-    font-size: 5.4rem;
+    font-size: 5.5rem;
     color: #ebebeb;
     margin-bottom: 5rem;
   }
@@ -30,13 +30,13 @@
   }
   
   h2 {
-    font-size: 4.2rem;
+    font-size: 4rem;
     margin-bottom: 4rem;
     font-weight: 700;
   }
   
   h3 {
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 500;
   }
 
@@ -49,7 +49,7 @@
   }
   
   
-  /* UTILITIES */
+  /* container/text alignment */
   
   .container {
     width: 100vw;
@@ -88,11 +88,11 @@
     display: none;
   }
   
-  /* BUTTONS */
+  /* buttons */
   .btn {
     font-size: 1.8rem;
     padding: 1rem 0;
-    width: 20rem;
+    width: 14em;
     text-align: center;
     border: 0.1rem solid #111111;
     margin-bottom: 1rem;
@@ -112,6 +112,17 @@
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
+  }
+   
+/*media queries*/
+  
+  @media (max-width:800px) {
+   
+    h1,h2{
+    font-size: 3.5rem;
+    text-align: center;
+   }
+    
   }
 
   @media (max-width:500px) {

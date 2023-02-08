@@ -11,7 +11,7 @@
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(50, 106, 211, 0.877);
     transform: translateY(-0.1rem);
-    transition: transform 150ms;
+    transition: transform 130ms;
   }
   
   .choice-prefix {

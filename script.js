@@ -60,7 +60,7 @@ let questions = [
         answer: 4,
     },
     {
-        question: 'Where was the Tim Burton-directed 1989 comic book adaptation Batman filmed?',
+        question: 'Where was the 1989 comic book movie Batman filmed?',
         choice1: 'Pinewood Studios, England',
         choice2: 'Warner Brothers Studios, Hollwood USA',
         choice3: 'Warner Brothers Studios, Burbank USA',
@@ -76,7 +76,7 @@ let questions = [
         answer: 2,
     },
     {
-        question: 'Which professional wrestler starred in the lead role in 1988 sci-fi/action movie, They Live?',
+        question: 'Which professional wrestler had the lead role in 1988 sci-fi/action movie, They Live?',
         choice1: 'The Ultimate Warrior',
         choice2: 'Andre The Giant',
         choice3: 'Hulk Hogan',
@@ -93,7 +93,7 @@ let questions = [
         answer: 1,
     },
     {
-        question: 'For which movie did Christopher Nolan make his feature-length directorial debut?',
+        question: 'Which movie featured Christopher Nolans directorial feature-length debut?',
         choice1: 'Doodlebug',
         choice2: 'Insomnia',
         choice3: 'Following',
@@ -116,6 +116,23 @@ let questions = [
         choice4: 'Chow Yun-fat',
         answer: 1,
     },
+    {
+        question: 'In which fictional town is infamous horror movie Troll 2 set?',
+        choice1: 'Nomed',
+        choice2: 'Nilmerg',
+        choice3: 'Llort',
+        choice4: 'Nilbog',
+        answer: 4,
+    },
+    {
+        question: 'What make is the titular car in Dude, Wheres My Car?',
+        choice1: 'Peugeot 205',
+        choice2: 'Renault Le Car',
+        choice3: 'Fiat Seicento',
+        choice4: 'Volkswagen Golf',
+        answer: 2,
+    },
+    
 ];
 
 //CONSTANTS
@@ -132,7 +149,6 @@ startGame = () => {
 getNewQuestion = () => {
     if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
-        //go to the end page
         return window.location.assign('gameover.html');
     }
     questionCounter++;
