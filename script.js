@@ -1,3 +1,7 @@
+//question and scoring/max question coding taken from tutorial:https://www.youtube.com/watch?v=zZdQGs62cR8&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=4
+
+//QUESTIONS AND SCORING SCRIPT
+
 const question = document.getElementById('question');
 const choices = Array.from(document.getElementsByClassName('choice-text'));
 const questionCounterText = document.getElementById("questionCounter");
@@ -136,6 +140,7 @@ let questions = [
 ];
 
 //CONSTANTS
+
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 10;
 
@@ -166,6 +171,8 @@ getNewQuestion = () => {
     availableQuestions.splice(questionIndex, 1);
     acceptAnswers = true;
 };
+
+//incorrect/correct feed back code from tutorial taken from:https://www.youtube.com/watch?v=_LYxkClHnV0&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=5
 
 choices.forEach((choice) => {
     choice.addEventListener('click', (e) => {

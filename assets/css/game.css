@@ -1,3 +1,5 @@
+/*choice styles*/
+/*naming conventions and parts of code from tutorial:https://www.youtube.com/watch?v=IK257Ln0MZc&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=3*/
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
@@ -35,6 +37,7 @@
   }
 
   /*hud*/
+  /*basic code from tutorial:https://www.youtube.com/watch?v=BOQLbu_Crc0&list=PLDlWc9AfQBfZIkdVaOQXi1tizJeNJipEx&index=6*/
 
   #hud {
     display: flex;
@@ -50,10 +53,3 @@
     text-align: center;
   }
 
-  @media (max-width:500px) {
-   
-    h1,h2{
-    font-size: 3rem;
-   }
-    
-  }
